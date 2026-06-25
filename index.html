@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homens de Fé | Sal da Terra Centro - Uberlândia</title>
+    
+    <!-- Configuração do Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        marinho: '#112D4E',
+                        dourado: '#D4AF37',
+                        claro: '#FBFDF6',
+                        escuro: '#333333'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Fontes do Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Rolagem suave para os links do menu */
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-claro text-escuro font-sans antialiased">
+
+    <!-- Cabeçalho / Menu -->
+    <header class="bg-marinho text-claro fixed w-full top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-serif font-bold text-dourado">
+                Homens de Fé
+            </div>
+            <!-- Menu Desktop -->
+            <nav class="hidden md:flex space-x-6 font-semibold">
+                <a href="#inicio" class="hover:text-dourado transition">Início</a>
+                <a href="#estudos" class="hover:text-dourado transition">Estudos</a>
+                <a href="#agenda" class="hover:text-dourado transition">Agenda</a>
+                <a href="#fotos" class="hover:text-dourado transition">Fotos</a>
+                <a href="#oracao" class="hover:text-dourado transition">Pedidos de Oração</a>
+            </nav>
+            <!-- Menu Mobile (Simples) -->
+            <div class="md:hidden">
+                <a href="#oracao" class="bg-dourado text-marinho px-4 py-2 rounded font-bold text-sm">Oração</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção Hero (Início) -->
+    <section id="inicio" class="bg-marinho text-claro pt-32 pb-20 px-4 text-center">
+        <div class="container mx-auto max-w-4xl">
+            <h1 class="text-4xl md:text-6xl font-serif font-bold mb-6 text-dourado">Levantando Homens com Propósito</h1>
+            <p class="text-lg md:text-xl mb-8 opacity-90">Grupo de oração e estudos da Igreja Sal da Terra Centro - Uberlândia, MG.</p>
+            
+            <div class="bg-white/10 p-6 rounded-lg inline-block border border-dourado/30 backdrop-blur-sm mb-8">
+                <p class="text-xl font-bold mb-2 text-dourado">Nossos Encontros</p>
+                <p class="text-lg">Toda Sexta-feira, das 05h30 às 06h30 da manhã</p>
+                <p class="mt-4 text-sm opacity-80">Liderança: José Carlos e Plínio</p>
+            </div>
+            
+            <div>
+                <a href="#oracao" class="bg-dourado text-marinho font-bold py-3 px-8 rounded-full hover:bg-yellow-500 transition shadow-lg inline-block">Faça um Pedido de Oração</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Estudos -->
+    <section id="estudos" class="py-20 px-4 bg-white">
+        <div class="container mx-auto max-w-5xl">
+            <h2 class="text-3xl font-serif font-bold text-marinho mb-10 border-l-4 border-dourado pl-4">Acervo de Estudos</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card de Estudo (Exemplo) -->
+                <div class="bg-claro p-6 rounded-lg shadow border border-gray-100 hover:shadow-md transition">
+                    <div class="w-10 h-10 bg-marinho text-dourado flex items-center justify-center rounded mb-4 font-bold">1</div>
+                    <h3 class="text-xl font-bold text-marinho mb-2">A Jornada da Fé</h3>
+                    <p class="text-sm text-gray-600 mb-4">Estudo sobre os pilares da fé cristã no dia a dia do homem moderno.</p>
+                    <a href="#" class="text-dourado font-semibold hover:text-yellow-600">Baixar PDF &rarr;</a>
+                </div>
+                <div class="bg-claro p-6 rounded-lg shadow border border-gray-100 hover:shadow-md transition">
+                    <div class="w-10 h-10 bg-marinho text-dourado flex items-center justify-center rounded mb-4 font-bold">2</div>
+                    <h3 class="text-xl font-bold text-marinho mb-2">Liderança em Casa</h3>
+                    <p class="text-sm text-gray-600 mb-4">Princípios bíblicos para guiar sua família com amor e sabedoria.</p>
+                    <a href="#" class="text-dourado font-semibold hover:text-yellow-600">Baixar PDF &rarr;</a>
+                </div>
+                <div class="bg-claro p-6 rounded-lg shadow border border-gray-100 hover:shadow-md transition flex items-center justify-center text-center">
+                    <p class="text-gray-500 font-semibold">+ Em breve novos materiais</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Agenda -->
+    <section id="agenda" class="py-20 px-4 bg-gray-50">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="text-3xl font-serif font-bold text-marinho mb-10">Nossa Agenda</h2>
+            <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-200 text-left">
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <span class="bg-dourado text-marinho font-bold px-3 py-1 rounded mr-4 mt-1">Sextas</span>
+                        <div>
+                            <h4 class="font-bold text-lg text-marinho">Reunião Semanal de Oração</h4>
+                            <p class="text-gray-600">05h30 às 06h30 - Presencial na Igreja Sal da Terra Centro.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start pt-4 border-t border-gray-100">
+                        <span class="bg-marinho text-claro font-bold px-3 py-1 rounded mr-4 mt-1">Mensal</span>
+                        <div>
+                            <h4 class="font-bold text-lg text-marinho">Café de Comunhão</h4>
+                            <p class="text-gray-600">Todo último sábado do mês. Fique atento aos avisos no grupo do WhatsApp.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Fotos -->
+    <section id="fotos" class="py-20 px-4 bg-white">
+        <div class="container mx-auto max-w-5xl">
+            <h2 class="text-3xl font-serif font-bold text-marinho mb-10 border-l-4 border-dourado pl-4">Galeria de Encontros</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <!-- Placeholders para fotos (Serão substituídas pelas reais depois) -->
+                <div class="aspect-square bg-gray-200 rounded object-cover flex items-center justify-center text-gray-400 text-sm">Foto 1</div>
+                <div class="aspect-square bg-gray-200 rounded object-cover flex items-center justify-center text-gray-400 text-sm">Foto 2</div>
+                <div class="aspect-square bg-gray-200 rounded object-cover flex items-center justify-center text-gray-400 text-sm">Foto 3</div>
+                <div class="aspect-square bg-gray-200 rounded object-cover flex items-center justify-center text-gray-400 text-sm">Foto 4</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Pedidos de Oração -->
+    <section id="oracao" class="py-20 px-4 bg-marinho text-claro">
+        <div class="container mx-auto max-w-3xl text-center">
+            <h2 class="text-3xl font-serif font-bold text-dourado mb-6">Central de Oração</h2>
+            <p class="mb-10 opacity-90">"Orai uns pelos outros..." - Tiago 5:16. Deixe seu pedido abaixo. Nossa liderança estará orando por você.</p>
+            
+            <!-- Formulário (Usando Formspree para sites estáticos) -->
+            <!-- Substitua 'SEU_ID_AQUI' pelo código que o Formspree gerar para você -->
+            <form action="https://formspree.io/f/SEU_ID_AQUI" method="POST" class="bg-white text-escuro p-8 rounded-lg shadow-xl text-left">
+                <div class="mb-4">
+                    <label class="block text-sm font-bold mb-2 text-marinho" for="nome">Nome (Opcional - deixe em branco para anônimo)</label>
+                    <input class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-dourado" type="text" id="nome" name="nome" placeholder="Seu nome">
+                </div>
+                <div class="mb-6">
+                    <label class="block text-sm font-bold mb-2 text-marinho" for="pedido">Seu Pedido de Oração *</label>
+                    <textarea class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-dourado h-32" id="pedido" name="pedido" placeholder="Descreva seu pedido..." required></textarea>
+                </div>
+                <button type="submit" class="w-full bg-marinho text-dourado font-bold py-3 rounded hover:bg-opacity-90 transition">Enviar Pedido</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-escuro text-claro py-8 text-center text-sm">
+        <div class="container mx-auto px-4">
+            <p class="mb-2 font-serif text-dourado text-lg">Homens de Fé</p>
+            <p>Igreja Sal da Terra Centro - Uberlândia, MG</p>
+            <p class="opacity-50 mt-4">&copy; 2026 Grupo Homens de Fé. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
